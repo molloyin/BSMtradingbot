@@ -5,13 +5,13 @@ from scipy.stats import norm
 def call_option(current, strike, risk_free_interest, t, sigma):
     d1 = _d1(current, strike, risk_free_interest, t, sigma)
     d2 = _d2(d1, sigma, t)
-    return current * norm.cdf(d1) - strike * e(-risk_free_interest * t) * norm.cdf(d2)
+    return current * norm.cdf(d1) - strike * e**(-risk_free_interest * t) * norm.cdf(d2)
 
 
 def put_option(current, strike, risk_free_interest, t, sigma):
     d1 = _d1(current, strike, risk_free_interest, t, sigma)
     d2 = _d2(d1, sigma, t)
-    return strike * e(-risk_free_interest * t) * norm.cdf(d2) - current * norm.cdf(d1)
+    return strike * e**(-risk_free_interest * t) * norm.cdf(-d2) - current * norm.cdf(-d1)
 
 
 def _d1(S, K, r, t, sigma):
