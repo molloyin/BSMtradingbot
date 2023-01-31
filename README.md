@@ -3,4 +3,4 @@ a large bank.
 
 #### Module Installation
 All required modules can be installed using:
-'sh modules.sh'
+`sh modules.sh`
