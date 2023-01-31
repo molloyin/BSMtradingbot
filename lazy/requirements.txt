@@ -1,0 +1,6 @@
+datetime
+fredapi
+pytz
+yfinance
+scipy
+numpy
