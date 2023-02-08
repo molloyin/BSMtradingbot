@@ -1,3 +1,6 @@
+TODO:   Add comparison to official option premiums, use cron instead of bot.py
+                Note: moving on from project... learning diminishing-returns
+
 PLAN:
 Familiarizing yourself with the Black Scholes model: Before you can build a bot that implements the model, you'll need to understand how the model works and what inputs it requires.
 
