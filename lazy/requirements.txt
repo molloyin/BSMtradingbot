@@ -5,3 +5,6 @@ yfinance
 scipy
 numpy
 schedule
+time
+subprocess
+csv

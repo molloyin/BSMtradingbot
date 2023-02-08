@@ -10,9 +10,6 @@ print("For:", stock, " with strike price: ", strike,
 call = call_option(s, strike, r, contract_period, sigma)
 put = put_option(s, strike, r, contract_period, sigma)
 
-print("Call option price: ", call)
-print("Put option price: ", put)
-
 
 with open("options_prices.csv", "a", newline="") as file:
       writer = csv.writer(file)

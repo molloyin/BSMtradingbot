@@ -5,8 +5,8 @@ import subprocess
 def job():
     subprocess.call(['python', 'src/model.py'])
 
-#schedule.every().day.at("09:00").do(job)
-schedule.every(1).minute.do(job)
+# US market closes 9am NZST
+schedule.every().day.at("09:01").do(job)
 
 while True:
     schedule.run_pending()

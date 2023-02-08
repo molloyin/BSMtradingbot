@@ -1,5 +1,5 @@
 Calc option pricing using classic Black-Scholes model, track the difference in premiums when compared to a more sophisticated/modified model used by
-CBOE. Relevant data is saved to an excel file.
+CBOE. Relevant data is saved to csv file.
 
 #### Module Installation
 All required modules can be installed using:
