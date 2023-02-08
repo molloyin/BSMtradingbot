@@ -1,3 +1,5 @@
+# Tests are trash, throw in incinerator (RIP)
+
 import formula
 import webscrubber as ws
 import numpy as np

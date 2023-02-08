@@ -10,5 +10,5 @@ sh modules.sh
 #### Usage
 You can run the model once with `model.py` or schedule it to automatically run once per day with `bot.py`
 
-**__WARNING__** bot.py will run in an infinite loop until you end the process or reboot (although, it only executes once per hour.) 
+**__WARNING__** bot.py will run in an infinite loop until you end the process or reboot (although, it only interprets 3 lines of code per minute, and executes the model once per day.) 
 

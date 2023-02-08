@@ -9,7 +9,8 @@ strike = 4
 contract_period = 60/365
 
 # get most up to date price; won't break if market is open
-s = yf.Ticker(stock).history(period="1d")['Close'][0]
+ticker = yf.Ticker(stock)
+s = ticker.history(period="1d")['Close'][0]
 
 t_upperbound = datetime.now(pytz.timezone('America/New_York'))
 # removed 2 extra days as yf.download is not inclusive...market is open 252 days and I was getting 250
